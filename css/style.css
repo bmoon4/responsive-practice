@@ -1,0 +1,263 @@
+/*color
+coral rgb(223, 100, 63)
+yellow rgb(219, 208, 47)
+beige rgb(227, 230, 187)
+navy rgb(81, 99, 133)
+darkblue rgb(35, 33, 56)
+*/
+
+/*Global*/
+* { margin: 0; padding: 0; }
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#highlight{
+    color:rgb(223, 100, 63);
+}
+.container{
+    width:100%;
+
+    overflow: hidden;
+}
+
+footer{
+    height:30px;
+    padding:10px;
+    background:coral;
+    text-align: center;
+    color:rgb(31, 28, 28);
+}
+/*Header*/
+
+header{
+    color:white; 
+}
+
+header .container{
+    padding-top:25px;
+    background-color:rgb(35, 33, 56);
+    min-height:100px;  
+}
+
+#logo{
+ float:left;
+ padding-top:20px;
+ padding-left:50px;
+
+} 
+
+#nav{
+    margin-right:50px;
+    padding-top:20px;
+}
+#nav ul{
+    float:right;
+    list-style: none;
+    padding-top:10px;
+    margin:auto;
+}
+#nav li{
+    display:inline-block;
+    padding-right:5px;
+}
+
+#nav a{
+    text-decoration: none;
+    color:rgb(227, 230, 187);
+    font-size: 1.4em;
+}
+
+#nav a:hover, #nav span:hover{
+    color:rgb(219, 208, 47);
+}
+
+/*Showcase*/
+.container #showcase{
+    text-align:center;
+    min-height: 370px;
+    background: url("../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    border-top: 4px solid coral;
+    padding-top:50px;
+    padding-bottom:20px;
+    box-sizing: border-box;
+   
+}
+
+.container #showcase h1{
+    margin:auto;
+    padding:30px;
+    color:white;
+    font-size:200%;
+}
+
+.container #showcase p{
+    color:white;
+    width:70%;
+    padding:10px;
+    text-align: center;
+    margin:auto;
+}
+
+/*Newsletter*/
+
+.container #newsletter{
+    color:white;
+    padding-top:15px;
+    background:rgb(36, 35, 34);
+    min-height: 70px;
+    text-align: center; 
+}
+
+ #newsletter h2{
+    float:left;
+    padding:10px;
+    margin-left: 300px;
+
+}
+
+#newsletter form{
+    float:right;
+    padding:10px;
+    margin-right: 300px;
+
+}
+.container #newsletter input[type="email"]{
+    padding:5px;
+    width:250px;
+}
+.container #newsletter input[type="submit"] {
+    padding:6px;
+    width:80px;
+    color:rgb(31, 28, 28);
+    background: coral;
+    border:0;
+}
+
+/*box- nodeJS, React, jQuery*/
+#box-wrapper{
+    text-align: center;
+}
+
+ #box-wrapper .box{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+/*About Contents*/
+#main-section .container{
+    min-height: auto;
+
+}
+
+#main-section .contents{
+    float:left;
+    width:60%;
+    padding:30px;
+}
+#about-content{
+    padding:10px;
+}
+
+#main-section .sidebar{
+    float:right;
+    width:25%;
+    padding:30px;
+    margin:30px;
+    background: lightblue;
+}
+
+/*Services*/
+
+.sorry{
+    min-height: 300px;
+    padding:30px;
+}
+
+.sorry h1{
+    color:maroon;
+    font-size:250%;
+}
+
+
+.sorry p{
+    font-size:2em;
+    padding:10px;
+}
+
+@media only screen and (max-width : 1024px) {
+    header .container{
+        padding-top:15px;
+        background-color:rgb(35, 33, 56);
+        min-height:120px;  
+    }
+    .container #newsletter{
+        color:white;
+        background:rgb(36, 35, 34);
+        min-height: 150px;
+        text-align: center;
+        padding-top:10px; 
+        padding-bottom:10px;
+    }
+    #newsletter h2{
+        float: none;
+        padding:10px;
+        margin:auto;
+    }
+    
+    #newsletter form{
+        float: none;
+        padding:10px;
+        margin:auto;
+    
+    }
+    .container #newsletter input[type="submit"] {
+        margin-top:5px;
+        padding:6px;
+        width:262px;
+        color:rgb(31, 28, 28);
+        background: coral;
+        border:0;
+    }
+    #box-wrapper .box{
+        display: block;
+        text-align: center;
+        width:100%;
+        margin:auto;
+        padding:1px;
+        border: 1px solid lightslategray;
+        box-sizing: border-box;
+    }
+    #main-section .container{
+        min-height: auto;
+    }
+
+    
+    #main-section .contents{
+        float:none;
+        width:90%;
+    }
+    #about-content{
+        margin-right:5px;
+
+    }
+    
+    #main-section .sidebar{
+        float:none;
+        width:100%;
+        padding:20px;
+        margin:auto;
+        background: lightblue;
+    }
+
+}
